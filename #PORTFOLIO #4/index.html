@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukhara's Portfolio website | #4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./image/my-logo minimal.png">
+</head>
+
+<body>
+
+
+
+    <div class="loader">
+        <div class="loaderStar">
+            <div class="star"></div>
+            <div class="starlight"></div>
+        </div>
+    </div>
+
+
+
+
+    <main>
+
+
+        <header>
+            <img src="image/my-logo minimal.png" alt="">
+
+            <div class="headerText">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#project">My projects</a> <span><a href="./pages/projects.html">Go to My
+                            projects</a></span></li>
+                <li><a href="#contact">Contact me</a></li>
+            </div>
+
+            <svg class="resMenuBtn" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <g fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5">
+                    <path d="M20 7H4" />
+                    <path d="M20 12H4" opacity=".5" />
+                    <path d="M20 17H4" />
+                </g>
+            </svg>
+
+        </header>
+
+
+
+        <canvas id="home"></canvas>
+
+
+
+
+        <div class="hero">
+            <div class="hero_text">
+                <h1>
+                    Hello
+                    <div class="span">👋</div>
+                </h1>
+                <h1>I'm a <span id="highlighted">Web developer</span></h1>
+
+                <button><a href="#contact">Hire me!</a></button>
+            </div>
+
+            <div class="hero_otherSide">
+                <h1 style="--delay: 0s;">+5 <br>
+                    <p style="--delay: 200ms;">Years of experience</p>
+                </h1>
+
+                <hr style="--delay: 300ms;">
+
+                <div class="heroSocials">
+                    <a target="_blank" style="--delay: 400ms;" href="https://t.me/Bukhara_DEV"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+                            <path fill="auto"
+                                d="M41.42 7.309s3.885-1.515 3.56 2.164c-.107 1.515-1.078 6.818-1.834 12.553l-2.59 16.99s-.216 2.489-2.159 2.922c-1.942.432-4.856-1.515-5.396-1.948c-.432-.325-8.094-5.195-10.792-7.575c-.756-.65-1.62-1.948.108-3.463L33.649 18.13c1.295-1.3 2.59-4.33-2.806-.65l-15.11 10.28s-1.727 1.083-4.964.109l-7.016-2.165s-2.59-1.623 1.835-3.246c10.793-5.086 24.068-10.28 35.831-15.15" />
+                        </svg></a>
+                    <a target="_blank" target="_blank" style="--delay: 600ms;"
+                        href="https://www.instagram.com/thebukhara_01?igsh=YXh2bXN6aDNvaG1o"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto"
+                                d="M11.95 1h.1c1.827 0 3.266 0 4.42.105c1.178.106 2.156.328 3.03.833A7 7 0 0 1 22.062 4.5c.505.874.727 1.852.833 3.03C23 8.684 23 10.123 23 11.95v.1c0 1.827 0 3.266-.105 4.42c-.106 1.178-.328 2.156-.833 3.03a7 7 0 0 1-2.562 2.562c-.874.505-1.852.727-3.03.833c-1.154.105-2.593.105-4.42.105h-.1c-1.827 0-3.266 0-4.42-.105c-1.178-.106-2.156-.328-3.03-.833A7 7 0 0 1 1.938 19.5c-.505-.874-.727-1.852-.833-3.03C1 15.316 1 13.877 1 12.05v-.1c0-1.827 0-3.266.105-4.42c.106-1.178.328-2.156.833-3.03A7 7 0 0 1 4.5 1.938c.874-.505 1.852-.727 3.03-.833C8.684 1 10.123 1 11.95 1M7.71 3.096c-1.039.095-1.691.274-2.21.574A5 5 0 0 0 3.67 5.5c-.3.519-.48 1.171-.574 2.21C3.001 8.764 3 10.112 3 12s.001 3.236.096 4.29c.095 1.039.274 1.691.574 2.21a5 5 0 0 0 1.83 1.83c.519.3 1.171.48 2.21.574c1.054.095 2.402.096 4.29.096s3.236-.001 4.29-.096c1.039-.095 1.691-.274 2.21-.574a5 5 0 0 0 1.83-1.83c.3-.519.48-1.171.574-2.21c.095-1.053.096-2.402.096-4.29s-.001-3.236-.096-4.29c-.095-1.039-.274-1.691-.574-2.21a5 5 0 0 0-1.83-1.83c-.519-.3-1.171-.48-2.21-.574C15.237 3.001 13.888 3 12 3s-3.236.001-4.29.096m9.04 3.156c0-.552.45-1.002 1.002-1.002s1.002.45 1.002 1.002s-.45 1.002-1.002 1.002s-1.002-.45-1.002-1.002M12 8.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6.5 12a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0" />
+                        </svg></a>
+                    <a target="_blank" style="--delay: 800ms;"
+                        href="https://www.upwork.com/freelancers/~01d2094c6054993008?mp_source=share"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto"
+                                d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076l.008-.042c.207-1.143.849-3.06 2.839-3.06a2.705 2.705 0 0 1 2.703 2.703a2.707 2.707 0 0 1-2.704 2.702m0-8.14c-2.539 0-4.51 1.649-5.31 4.366c-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112a2.55 2.55 0 0 1-2.547 2.548a2.55 2.55 0 0 1-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303c2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109c3 0 5.439-2.452 5.439-5.45c0-3-2.439-5.439-5.439-5.439" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="aboutContainer">
+            <div id="about" class="title animate">
+                <h1>About me</h1>
+            </div>
+
+
+            <div class="codePlayground">
+
+                <ul></ul>
+                <ul></ul>
+                <ul>
+                    <li>.my-name</li> <span>{</span>
+                </ul>
+                <ul>
+                    <p>age<span>:</span>
+                    <ol>18</ol><span>;</span></p>
+                </ul>
+                <ul>
+                    <p>name<span>:</span>
+                    <ol>Doston</ol><span>;</span></p>
+                </ul>
+                <ul>
+                    <p>surename<span>:</span>
+                    <ol>Abdurazzoqov</ol><span>;</span></p>
+                </ul>
+                <ul>
+                    <p>location<span>:</span>
+                    <ol>Uzbekistan(Bukhara)</ol><span>;</span></p>
+                </ul>
+                <ul><span>}</span></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul>
+                    <li>.education</li> <span>{</span>
+                </ul>
+                <ul>
+                    <p>course<span>:</span>
+                    <ol>3y</ol><span>;</span></p>
+                </ul>
+                <ul>
+                    <p>school<span>:</span>
+                    <ol>finished</ol><span>;</span></p>
+                </ul>
+                <ul>
+                    <p>university<span>:</span>
+                    <ol>pdp</ol><span>;</span></p>
+                </ul>
+                <ul><span>}</span></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul>
+                    <li>.specialty</li> <span>{</span>
+                </ul>
+                <ul>
+                    <p>hobby<span>:</span>
+                    <ol>coding, gaming</ol><span>;</span></p>
+                </ul>
+                <ul>
+                    <p>profession<span>:</span>
+                    <ol>web-developer</ol><span>;</span></p>
+                </ul>
+                <ul>
+                    <p>additional-knowledge<span>:</span>
+                    <ol>adobe-photoshop</ol><span>;</span></p>
+                </ul>
+                <ul><span>}</span></ul>
+                <ul></ul>
+                <ul></ul>
+            </div>
+        </div>
+
+
+        <div class="langPercentage">
+            <div class="langBox" style="--clr: #E44D26;">
+                <div class="roundProgressBar" style="--i: 99%;">
+                    <h1>99<span>%</span></h1>
+                </div>
+
+                <svg class="animate2" class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 128 128"><!-- Icon from Devicon by konpa - https://github.com/devicons/devicon/blob/master/LICENSE -->
+                    <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198l-45.019 12.48z" />
+                    <path fill="#F16529" d="m64 116.8l36.378-10.086l8.559-95.878H64z" />
+                    <path fill="#EBEBEB"
+                        d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692l3.382 37.927H64zm0 35.743l-.061.017l-15.327-4.14l-.979-10.975H33.816l1.928 21.609l28.193 7.826l.063-.017z" />
+                    <path fill="#fff"
+                        d="M63.952 52.455v13.763h16.947l-1.597 17.849l-15.35 4.143v14.319l28.215-7.82l.207-2.325l3.234-36.233l.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092l.628-6.978l.329-3.692z" />
+                </svg>
+
+                <h1>HTML</h1>
+            </div>
+            <div class="langBox" style="--clr: #1572B6;">
+                <div class="roundProgressBar" style="--i: 95%;">
+                    <h1>95<span>%</span></h1>
+                </div>
+
+                <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 128 128"><!-- Icon from Devicon by konpa - https://github.com/devicons/devicon/blob/master/LICENSE -->
+                    <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754l-45.243 12.543z" />
+                    <path fill="#33A9DC" d="m64.001 117.062l36.559-10.136l8.601-96.354h-45.16z" />
+                    <path fill="#fff"
+                        d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711l-3.4 38.114h-30.95z" />
+                    <path fill="#EBEBEB"
+                        d="m64.083 87.349l-.061.018l-15.403-4.159l-.985-11.031H33.752l1.937 21.717l28.331 7.863l.063-.018z" />
+                    <path fill="#fff"
+                        d="m81.127 64.675l-1.666 18.522l-15.426 4.164v14.39l28.354-7.858l.208-2.337l2.406-26.881z" />
+                    <path fill="#EBEBEB"
+                        d="M64.048 23.435v13.831H30.64l-.277-3.108l-.63-7.012l-.331-3.711zm-.047 27.996v13.831H48.792l-.277-3.108l-.631-7.012l-.33-3.711z" />
+                </svg>
+
+                <h1>CSS</h1>
+            </div>
+            <div class="langBox" style="--clr: #F0DB4F;">
+                <div class="roundProgressBar" style="--i: 54%;">
+                    <h1>54<span>%</span></h1>
+                </div>
+
+                <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 128 128"><!-- Icon from Devicon by konpa - https://github.com/devicons/devicon/blob/master/LICENSE -->
+                    <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
+                    <path fill="#323330"
+                        d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981c-3.832-1.761-8.104-3.022-9.377-5.926c-.452-1.69-.512-2.642-.226-3.665c.821-3.32 4.784-4.355 7.925-3.403c2.023.678 3.938 2.237 5.093 4.724c5.402-3.498 5.391-3.475 9.163-5.879c-1.381-2.141-2.118-3.129-3.022-4.045c-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235c-5.926 6.724-4.236 18.492 2.975 23.335c7.104 5.332 17.54 6.545 18.873 11.531c1.297 6.104-4.486 8.08-10.234 7.378c-4.236-.881-6.592-3.034-9.139-6.949c-4.688 2.713-4.688 2.713-9.508 5.485c1.143 2.499 2.344 3.63 4.26 5.795c9.068 9.198 31.76 8.746 35.83-5.176c.165-.478 1.261-3.666.38-8.581M69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149c-1.713 3.558-6.152 3.117-8.175 2.427c-2.059-1.012-3.106-2.451-4.319-4.485c-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901c4.462 2.678 10.459 3.499 16.731 2.059c4.082-1.189 7.604-3.652 9.448-7.401c2.666-4.915 2.094-10.864 2.07-17.444c.06-10.735.001-21.468.001-32.237" />
+                </svg>
+
+                <h1>JAVASCRIPT</h1>
+            </div>
+            <div class="langBox" style="--clr: #cd6799;">
+                <div class="roundProgressBar" style="--i: 50%;">
+                    <h1>50<span>%</span></h1>
+                </div>
+
+                <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32"><!-- Icon from VSCode Icons by Roberto Huertas - https://github.com/vscode-icons/vscode-icons/blob/master/LICENSE -->
+                    <path fill="#cd6799"
+                        d="M16.171 18.7c-.481.221-1.008.509-2.063 1.088c-.4.225-.818.45-1.207.662c-.027-.027-.055-.061-.082-.089c-2.087-2.23-5.947-3.805-5.783-6.8c.061-1.091.436-3.955 7.413-7.433c5.742-2.83 10.311-2.046 11.1-.307c1.134 2.479-2.449 7.092-8.379 7.761a4.47 4.47 0 0 1-3.751-.948c-.314-.341-.361-.361-.477-.293c-.191.1-.068.409 0 .586a3.5 3.5 0 0 0 2.141 1.684a11.4 11.4 0 0 0 6.956-.689c3.594-1.391 6.4-5.258 5.578-8.5c-.825-3.287-6.281-4.371-11.443-2.537a26 26 0 0 0-8.79 5.047c-2.844 2.66-3.294 4.972-3.11 5.94c.662 3.437 5.4 5.674 7.3 7.331q-.148.08-.259.143c-.948.471-4.562 2.36-5.463 4.358c-1.023 2.264.164 3.887.948 4.105a5.83 5.83 0 0 0 6.281-2.544a6.3 6.3 0 0 0 .559-5.8a5 5 0 0 1 .716-.477c.484-.286.945-.568 1.354-.786a10.5 10.5 0 0 1 4.475-.989c3.246.382 3.887 2.407 3.764 3.26a2.16 2.16 0 0 1-1.03 1.459c-.225.143-.3.191-.28.293c.027.15.136.143.327.116a2.535 2.535 0 0 0 1.766-2.257c.1-2-1.807-4.194-5.183-4.174a7.8 7.8 0 0 0-2.946.587q-.225.093-.437.2Zm-4.825 7.839c-1.078 1.173-2.578 1.616-3.226 1.241c-.7-.4-.423-2.135.9-3.376a17 17 0 0 1 2.53-1.889c.157-.1.389-.232.668-.4l.075-.041l.164-.1a4.66 4.66 0 0 1-1.111 4.565" />
+                </svg>
+
+                <h1>SCSS</h1>
+            </div>
+            <div class="langBox" style="--clr: #a259ff;">
+                <div class="roundProgressBar" style="--i: 75%;">
+                    <h1>75<span>%</span></h1>
+                </div>
+
+                <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 128 128"><!-- Icon from Devicon by konpa - https://github.com/devicons/devicon/blob/master/LICENSE -->
+                    <path fill="#0acf83"
+                        d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129m0 0" />
+                    <path fill="#a259ff" d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5m0 0" />
+                    <path fill="#f24e1e" d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5m0 0" />
+                    <path fill="#ff7262" d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0" />
+                    <path fill="#1abcfe"
+                        d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5S76.6 43 88.5 43S110 52.6 110 64.5m0 0" />
+                </svg>
+
+                <h1>FIGMA</h1>
+            </div>
+            <div class="langBox" style="--clr: #31A8FF;">
+                <div class="roundProgressBar" style="--i: 72%;">
+                    <h1>72<span>%</span></h1>
+                </div>
+
+                <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32.77" height="32"
+                    viewBox="0 0 256 250"><!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt -->
+                    <rect width="256" height="249.6" fill="#001E36" rx="42.5" />
+                    <path fill="#31A8FF"
+                        d="M57.644 175.035V65.297q0-1.201 1.031-1.202l1.087-.003l1.858-.02l2.582-.051l8.65-.183l9.275-.172q4.893-.085 9.702-.086q13.05 0 21.982 3.263a38.1 38.1 0 0 1 14.34 8.758a33.6 33.6 0 0 1 7.814 12.108a40.2 40.2 0 0 1 2.405 13.824q0 13.741-6.355 22.669a35.9 35.9 0 0 1-16.6 12.756l-.573.21c-6.973 2.601-14.695 3.541-23.164 3.6l-1.316.004l-1.953-.01l-.985-.014l-1.098-.026l-.662-.026l-.402-.021l-.989-.036l-1.209-.025l-1.82-.013l-.405-.001v34.263a1.366 1.366 0 0 1-1.546 1.546H58.847q-1.204.001-1.203-1.374M80.84 84.703v35.792q2.23.173 4.12.172h5.668a40.3 40.3 0 0 0 11.533-1.727l.746-.233a18.5 18.5 0 0 0 8.759-5.668q3.228-3.807 3.344-10.492l.005-.499c.09-3.322-.774-6.6-2.491-9.445a16 16 0 0 0-7.47-6.097a31.8 31.8 0 0 0-12.537-2.146l-2.178.006l-1.374.012l-1.311.017l-1.85.036l-1.35.038l-.701.026l-.937.044l-.798.049l-.455.036l-.393.038l-.173.02zm123.93 29.284a40.2 40.2 0 0 0-9.458-3.442l-.76-.164a54.3 54.3 0 0 0-11.009-1.363l-.926-.011a22.2 22.2 0 0 0-6.44.773a5.8 5.8 0 0 0-3.35 2.146a5.4 5.4 0 0 0-.858 2.92a4.56 4.56 0 0 0 1.03 2.747a11.7 11.7 0 0 0 3.235 2.637l.372.197a72 72 0 0 0 7.556 3.52a75 75 0 0 1 16.4 7.814a24.94 24.94 0 0 1 8.416 8.845a23.6 23.6 0 0 1 2.49 10.99a24.7 24.7 0 0 1-4.122 14.169a27.1 27.1 0 0 1-11.936 9.53q-7.556 3.32-18.557 3.432l-.762.004a70 70 0 0 1-13.556-1.188l-.956-.186a46.3 46.3 0 0 1-10.905-3.435a2.22 2.22 0 0 1-1.202-1.89v-18.718a1.01 1.01 0 0 1 .43-.945a.83.83 0 0 1 .944.086a45.9 45.9 0 0 0 13.223 5.238a54.5 54.5 0 0 0 12.537 1.632q6.009 0 8.844-1.546a4.86 4.86 0 0 0 2.834-4.465q0-2.23-2.576-4.293q-1.08-.864-3.097-1.88l-.643-.316l-.686-.323l-.36-.164l-.754-.334l-.393-.17l-.82-.344l-.427-.175l-.886-.355l-.46-.18l-.953-.367l-.997-.373a63 63 0 0 1-15.199-7.728a26.2 26.2 0 0 1-8.071-9.016a23.7 23.7 0 0 1-2.49-10.905a24.6 24.6 0 0 1 3.606-12.88c2.7-4.27 6.576-7.67 11.163-9.788q7.555-3.776 18.89-3.779a83.6 83.6 0 0 1 13.224.945a34.7 34.7 0 0 1 9.206 2.49c.473.136.854.485 1.03.945c.117.419.174.852.172 1.288v17.345c.025.41-.172.803-.515 1.03a1.66 1.66 0 0 1-1.478 0" />
+                </svg>
+
+                <h1>PHOTOSHOP</h1>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="serviceContainer" id="services">
+            <div class="title animate">
+                <h1>Services i offer</h1>
+            </div>
+
+            <div class="serviceWrapper">
+                <div class="serviceCard">
+                    <svg class="animate2" class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24">
+                        <path fill="auto"
+                            d="m12 14.052l1.65 1.015q.217.137.444-.022q.227-.158.172-.426l-.443-1.886l1.47-1.264q.21-.186.12-.431q-.09-.246-.363-.27l-1.917-.176l-.76-1.761q-.106-.242-.373-.242t-.373.242l-.76 1.761l-1.917.175q-.273.025-.363.27t.12.432l1.47 1.264l-.442 1.886q-.056.268.17.426q.228.159.445.022zM9.073 19H6.616q-.672 0-1.144-.472T5 17.385v-2.458l-1.79-1.796q-.237-.243-.349-.538T2.75 12t.112-.593t.347-.538L5 9.073V6.616q0-.672.472-1.144T6.616 5h2.457l1.796-1.79q.243-.237.538-.349T12 2.75t.593.112t.538.347L14.927 5h2.458q.67 0 1.143.472q.472.472.472 1.144v2.457l1.79 1.796q.237.243.349.538t.111.593t-.111.593t-.348.538L19 14.927v2.458q0 .67-.472 1.143q-.472.472-1.143.472h-2.458l-1.796 1.79q-.243.237-.538.349T12 21.25t-.593-.111t-.538-.348zm.427-1l2.058 2.058q.173.173.442.173t.442-.173L14.5 18h2.885q.269 0 .442-.173t.173-.442V14.5l2.058-2.058q.173-.173.173-.442t-.173-.442L18 9.5V6.616q0-.27-.173-.443T17.385 6H14.5l-2.058-2.058Q12.27 3.77 12 3.77t-.442.173L9.5 6H6.616q-.27 0-.443.173T6 6.616V9.5l-2.058 2.058q-.173.173-.173.442t.173.442L6 14.5v2.885q0 .269.173.442t.443.173zm2.5-6" />
+                    </svg>
+                    <div class="serviceCrad_text">
+                        <h1>Great Customer service</h1>
+                        <p> Specialize in providing responsive, empathetic, and solution-focused customer service. With
+                            strong communication skills and a calm, professional approach.</p>
+                    </div>
+                </div>
+                <div class="serviceCard">
+                    <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="auto"
+                            d="M3 7c0-.55.45-1 1-1h16c.55 0 1-.45 1-1s-.45-1-1-1H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h3c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1-.45-1-1zm9 5h-2c-.55 0-1 .45-1 1v.78c-.61.55-1 1.33-1 2.22s.39 1.67 1 2.22V19c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-.78c.61-.55 1-1.34 1-2.22s-.39-1.67-1-2.22V13c0-.55-.45-1-1-1m-1 5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5M22 8h-6c-.5 0-1 .5-1 1v10c0 .5.5 1 1 1h6c.5 0 1-.5 1-1V9c0-.5-.5-1-1-1m-1 10h-4v-8h4z" />
+                    </svg>
+                    <div class="serviceCrad_text">
+                        <h1>Responsive design</h1>
+                        <p>I design user interfaces that adapt seamlessly across all screen sizes—mobile, tablet, and
+                            desktop. My focus is on creating clean, functional layouts.</p>
+                    </div>
+                </div>
+                <div class="serviceCard">
+                    <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+                        <path fill="auto"
+                            d="m45 2l-9.396 2.48L29.298 2L19 36.354h10.865L20.352 62L43.65 27.648H29.626z" />
+                    </svg>
+                    <div class="serviceCrad_text">
+                        <h1>Fast and Good Quality</h1>
+                        <p>I deliver high-quality work with speed and precision, without compromising attention to
+                            detail.</p>
+                    </div>
+                </div>
+                <div class="serviceCard">
+                    <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--accent-color-lt-xl)" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <path
+                                d="M9.225 18.412A1.6 1.6 0 0 1 8 19c-.468 0-.914-.214-1.225-.588l-4.361-5.248a1.844 1.844 0 0 1 0-2.328l4.361-5.248A1.6 1.6 0 0 1 8 5c.468 0 .914.214 1.225.588l4.361 5.248a1.844 1.844 0 0 1 0 2.328zM17 5l4.586 5.836a1.844 1.844 0 0 1 0 2.328L17 19" />
+                            <path d="m13 5l4.586 5.836a1.844 1.844 0 0 1 0 2.328L13 19" />
+                        </g>
+                    </svg>
+                    <div class="serviceCrad_text">
+                        <h1>Smooth and Modern Animations</h1>
+                        <p>I create smooth, modern animations that enhance user experience without overwhelming the
+                            design.</p>
+                    </div>
+                </div>
+
+                <div class="serviceCard">
+                    <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="auto"
+                            d="M8 6h8v2H8zm-4 4V8h4v2zm-2 2v-2h2v2zm0 2v-2H0v2zm2 2H2v-2h2zm4 2H4v-2h4zm8 0v2H8v-2zm4-2v2h-4v-2zm2-2v2h-2v-2zm0-2h2v2h-2zm-2-2h2v2h-2zm0 0V8h-4v2zm-10 1h4v4h-4z" />
+                    </svg>
+                    <div class="serviceCrad_text">
+                        <h1>Pixel Perfect Design</h1>
+                        <p>I focus on pixel-perfect design to ensure every element is sharp, aligned, and visually
+                            consistent across all devices.</p>
+                    </div>
+                </div>
+
+                <div class="serviceCard">
+                    <svg class="animate2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="auto"
+                            d="M6.65 8.15q.15.15.35.15t.35-.15l1.3-1.3q.15-.15.15-.35t-.15-.35l-1.3-1.3Q7.2 4.7 7 4.7t-.35.15l-1.3 1.3q-.15.15-.15.35t.15.35zM4 14q-.825 0-1.412-.587T2 12V3q0-.825.588-1.412T4 1h16q.825 0 1.413.588T22 3v9q0 .825-.587 1.413T20 14h-2.025q-.425 0-.7-.288T17 13t.288-.712T18 12h2V3H4v9h2q.425 0 .713.288T7 13t-.288.713T6 14zm12.5-7q.625 0 1.063-.437T18 5.5t-.437-1.062T16.5 4t-1.062.438T15 5.5t.438 1.063T16.5 7M6 23q-.425 0-.712-.288T5 22v-1.1q0-.875.488-1.625t1.287-1.125q1.225-.575 2.55-.862T12 17t2.675.288t2.55.862q.8.375 1.288 1.125T19 20.9V22q0 .425-.287.713T18 23zm1-2h10v-.1q0-.3-.175-.55t-.45-.375q-1.05-.475-2.15-.725T12 19t-2.225.25t-2.15.725q-.275.125-.45.375T7 20.9zm5-5q-1.45 0-2.475-1.025T8.5 12.5t1.025-2.475T12 9t2.475 1.025T15.5 12.5t-1.025 2.475T12 16m0-2q.625 0 1.063-.437T13.5 12.5t-.437-1.062T12 11t-1.062.438T10.5 12.5t.438 1.063T12 14m0 7" />
+                    </svg>
+                    <div class="serviceCrad_text">
+                        <h1>UI UX expert</h1>
+                        <p>As a UI/UX expert, I design intuitive interfaces that are both visually appealing and
+                            user-friendly. I combine user research, thoughtful layouts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div id="project" class="projectContainer">
+            <div id="about" class="title animate">
+                <h1>My projects</h1>
+                <p>Top 5</p>
+            </div>
+
+
+            <div class="projectWrapperContainer">
+                <div class="projectWrapperSlider swiper-wrapper">
+                    <div class="projectCard">
+                        <img src="image/thumbs/thumb (5).png" alt="">
+                        <div class="projectInfo">
+                            <h1>KineMarket</h1>
+                            <a target="_blank" href="https://kinemarket.netlify.app/">Go to site
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="auto" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <img src="image/thumbs/thumb (2).png" alt="">
+                        <div class="projectInfo">
+                            <h1>Portfolio V2.0</h1>
+                            <a target="_blank" href="https://bukhara-dev-v2.netlify.app/">Go to site
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="auto" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <img src="image/thumbs/thumb (3).png" alt="">
+                        <div class="projectInfo">
+                            <h1>Portfolio V3.0</h1>
+                            <a target="_blank" href="https://bukhara-dev-v3.netlify.app/">Go to site
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="auto" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <img src="image/thumbs/thumb (4).png" alt="">
+                        <div class="projectInfo">
+                            <h1>Trading</h1>
+                            <a target="_blank" href="https://invest-proo-no-money.netlify.app/">Go to site
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="auto" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <img src="image/thumbs/thumb (6).png" alt="">
+                        <div class="projectInfo">
+                            <h1>RRR-academy</h1>
+                            <a target="_blank" href="https://rrr-academy-finished.netlify.app/">Go to site
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="auto" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <img src="image/thumbs/thumb (1).png" alt="">
+                        <div class="projectInfo">
+                            <h1>See more!</h1>
+                            <a href="./pages/projects.html">See my all Projects
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="auto" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="prevBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20">
+                        <path fill="auto" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
+                    </svg>
+                </button>
+                <button class="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20">
+                        <path fill="auto" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="contact" id="contact">
+            <div class="title animate">
+                <h1>Contact me!</h1>
+                <p>If you want</p>
+            </div>
+
+            <div class="contactInfo">
+                <ul>
+                    <h1>My socials</h1>
+                    <a target="_blank" href="https://github.com/BUKHARA07"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto"
+                                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+                        </svg>
+                        GitHub</a>
+                    <a target="_blank" href="https://t.me/Bukhara_DEV">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto"
+                                d="M2.148 11.81q7.87-3.429 10.497-4.522c4.999-2.079 6.037-2.44 6.714-2.452c.15-.003.482.034.698.21c.182.147.232.347.256.487s.054.459.03.708c-.27 2.847-1.443 9.754-2.04 12.942c-.252 1.348-.748 1.8-1.23 1.845c-1.045.096-1.838-.69-2.85-1.354c-1.585-1.039-2.48-1.686-4.018-2.699c-1.777-1.171-.625-1.815.388-2.867c.265-.275 4.87-4.464 4.96-4.844c.01-.048.021-.225-.084-.318c-.105-.094-.26-.062-.373-.036q-.239.054-7.592 5.018q-1.079.74-1.952.721c-.643-.014-1.88-.363-2.798-.662c-1.128-.367-2.024-.56-1.946-1.183q.061-.486 1.34-.994" />
+                        </svg>
+                        Telegram</a>
+                    <a target="_blank" href="https://www.instagram.com/thebukhara_01/?igsh=YXh2bXN6aDNvaG1o">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto" fill-rule="evenodd"
+                                d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Instagram</a>
+                </ul>
+
+                <ul>
+                    <h1>Hire me</h1>
+
+                    <a target="_blank" href="https://www.upwork.com/freelancers/~01d2094c6054993008?mp_source=share">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from BoxIcons Logo by Atisa - https://creativecommons.org/licenses/by/4.0/ -->
+                            <path fill="auto"
+                                d="M17.47 6.07a4.54 4.54 0 0 0-4.38 3.69a20 20 0 0 1-2.28-4.9H8.55v6a2.14 2.14 0 1 1-4.28 0v-6L2 4.91v6a4.4 4.4 0 1 0 8.8-.05v-1a20.6 20.6 0 0 0 1.65 2.7l-1.38 6.61h2.32l1-4.81a5.6 5.6 0 0 0 3.11.89a4.57 4.57 0 0 0 0-9.14zm0 6.83a4.1 4.1 0 0 1-2.55-1l.23-.91v-.05c.16-1 .66-2.6 2.35-2.6a2.25 2.25 0 0 1 2.27 2.24a2.41 2.41 0 0 1-2.27 2.32z" />
+                        </svg>
+                        Upwork</a>
+                    <a target="_blank" href="https://www.upwork.com/freelancers/~01d2094c6054993008?mp_source=share">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="-2.5 -2 24 24"><!-- Icon from Jam Icons by Michael Amprimo - https://github.com/cyberalien/jam-backup/blob/main/LICENSE -->
+                            <g fill="auto">
+                                <path
+                                    d="M16.25 16.25v-10h-10v-.625c0-1.034.841-1.875 1.875-1.875H10V0H8.125A5.63 5.63 0 0 0 2.5 5.625v.625H0V10h2.5v6.25H0V20h8.75v-3.75h-2.5V10h6.285v6.25H10V20h8.75v-3.75z" />
+                                <circle cx="14.375" cy="1.875" r="1.875" />
+                            </g>
+                        </svg>
+                        Fiverr</a>
+                    <a target="_blank" href="https://www.upwork.com/freelancers/~01d2094c6054993008?mp_source=share">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                            <path fill="auto"
+                                d="m14.096 3.076l1.634 2.292L24 3.076M5.503 20.924l4.474-4.374l-2.692-2.89m6.133-10.584L11.027 5.23l4.022.15M4.124 3.077l.857 1.76l4.734.294m-3.058 7.072l3.497-6.522L0 5.13m7.064 7.485l3.303 3.548l3.643-3.57l1.13-6.652l-4.439-.228Z" />
+                        </svg>
+                        Freelancer</a>
+                </ul>
+
+                <ul>
+                    <h1>Chat with me</h1>
+
+                    <a target="_blank" href="abdurazzoqovdoston75@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto"
+                                d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12v1.45q0 1.475-1.012 2.513T18.5 17q-.875 0-1.65-.375t-1.3-1.075q-.725.725-1.638 1.088T12 17q-2.075 0-3.537-1.463T7 12t1.463-3.537T12 7t3.538 1.463T17 12v1.45q0 .65.425 1.1T18.5 15t1.075-.45t.425-1.1V12q0-3.35-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20h5v2zm0-7q1.25 0 2.125-.875T15 12t-.875-2.125T12 9t-2.125.875T9 12t.875 2.125T12 15" />
+                        </svg>
+                        Email</a>
+
+                    <a target="_blank" href="https://t.me/Bukhara_DEV">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto"
+                                d="M2.148 11.81q7.87-3.429 10.497-4.522c4.999-2.079 6.037-2.44 6.714-2.452c.15-.003.482.034.698.21c.182.147.232.347.256.487s.054.459.03.708c-.27 2.847-1.443 9.754-2.04 12.942c-.252 1.348-.748 1.8-1.23 1.845c-1.045.096-1.838-.69-2.85-1.354c-1.585-1.039-2.48-1.686-4.018-2.699c-1.777-1.171-.625-1.815.388-2.867c.265-.275 4.87-4.464 4.96-4.844c.01-.048.021-.225-.084-.318c-.105-.094-.26-.062-.373-.036q-.239.054-7.592 5.018q-1.079.74-1.952.721c-.643-.014-1.88-.363-2.798-.662c-1.128-.367-2.024-.56-1.946-1.183q.061-.486 1.34-.994" />
+                        </svg>
+                        Telegram</a>
+                    <a target="_blank" href="https://www.instagram.com/thebukhara_01/?igsh=YXh2bXN6aDNvaG1o">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="auto" fill-rule="evenodd"
+                                d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Instagram</a>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path fill="auto"
+                                d="M19.95 21q-3.125 0-6.187-1.35T8.2 15.8t-3.85-5.55T3 4.05V3h5.9l.925 5.025l-2.85 2.875q.55.975 1.225 1.85t1.45 1.625q.725.725 1.588 1.388T13.1 17l2.9-2.9l5 1.025V21z" />
+                        </svg>
+                        (+998) 91 412 38 98
+                    </p>
+                </ul>
+
+                <ul>
+                    <h1>Useful links</h1>
+
+                    <a href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path fill="auto"
+                                d="M4.5 21q-.625 0-1.062-.437T3 19.5v-1.9l4-3.55V21zM8 21v-4h8v4zm9 0v-8.2L12.725 9l3.025-2.675l4.75 4.225q.25.225.375.513t.125.612V19.5q0 .625-.437 1.063T19.5 21zM3 16.25v-4.575q0-.325.125-.625t.375-.5L11 3.9q.2-.2.463-.287T12 3.525t.538.088T13 3.9l2 1.775z" />
+                        </svg>
+                        Home</a>
+
+                    <a href="#services">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+                            <path fill="auto"
+                                d="M21 13c.6 0 1.1.2 1.4.6c.4.4.6.9.6 1.4l-8 3l-7-2V7h1.9l7.3 2.7c.5.2.8.6.8 1.1c0 .3-.1.6-.3.8s-.5.4-.9.4H14l-1.7-.7l-.3.9l2 .8zM2 7h4v11H2z" />
+                        </svg>
+                        Services
+                    </a>
+
+                    <a href="#project">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 512 512"><!-- Icon from Siemens Industrial Experience Icons by Siemens AG - https://github.com/siemens/ix-icons/blob/main/LICENSE.md -->
+                            <path fill="auto" fill-rule="evenodd"
+                                d="m256 34.347l192 110.851v221.703L256 477.752L64 366.901V145.198zM106.666 192.001v150.266l128 73.9V265.902zm298.667.001l-128 73.9v150.265l128-73.9zM256 83.614l-125.867 72.67L256 228.952l125.867-72.67z" />
+                        </svg>
+                        My projects</a>
+                    <a href="./pages/projects.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 512 512"><!-- Icon from Siemens Industrial Experience Icons by Siemens AG - https://github.com/siemens/ix-icons/blob/main/LICENSE.md -->
+                            <path fill="auto" fill-rule="evenodd"
+                                d="M421.935 90.066c2.286 2.287 5.356 7.973 4.013 21.398c-1.323 13.221-6.731 30.687-16.845 51.505a306 306 0 0 1-3.77 7.492v42.31c39.823-61.993 54.037-115.44 31.687-137.79c-22.529-22.528-76.652-7.907-139.277 32.646l20.879 12.054c10.535-6.46 20.717-12.073 30.411-16.783c20.817-10.114 38.283-15.522 51.504-16.845c13.425-1.343 19.112 1.727 21.398 4.013M405.333 341.54v-42.31c39.823 61.993 54.037 115.44 31.687 137.79c-22.536 22.536-76.689 7.897-139.341-32.687l20.877-12.053c10.559 6.477 20.763 12.104 30.477 16.823c20.817 10.114 38.283 15.522 51.505 16.845c13.424 1.343 19.111-1.727 21.397-4.013c2.287-2.287 5.357-7.973 4.013-21.398c-1.322-13.221-6.73-30.687-16.845-51.505a306 306 0 0 0-3.77-7.492m-211.888 50.74l20.876 12.053c-62.651 40.584-116.804 55.223-139.34 32.687c-22.35-22.35-8.136-75.795 31.686-137.788v42.31a309 309 0 0 0-3.769 7.49c-10.114 20.818-15.522 38.284-16.845 51.505c-1.343 13.425 1.727 19.111 4.013 21.398c2.287 2.286 7.973 5.356 21.398 4.013c13.221-1.323 30.687-6.731 51.505-16.845c9.713-4.719 19.917-10.346 30.476-16.823M74.981 74.981c-22.35 22.35-8.136 75.795 31.686 137.788v-42.311a308 308 0 0 1-3.769-7.489c-10.114-20.818-15.522-38.284-16.845-51.505c-1.343-13.425 1.727-19.111 4.013-21.398c2.287-2.286 7.973-5.356 21.398-4.013c13.221 1.323 30.687 6.73 51.505 16.845c9.693 4.709 19.874 10.322 30.41 16.782l20.878-12.054C151.633 67.074 97.51 52.453 74.981 74.981M256 108.16l128 73.901v147.801l-128 73.901l-128-73.901V182.06zm85.333 123.132v73.937l-64 36.95v-73.937zm-106.666 36.95v73.937l-64-36.95v-73.937zM256 231.291l-63.969-36.933L256 157.426l63.969 36.932z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        All Projects</a>
+                    <a href="#contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path fill="auto"
+                                d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3" />
+                        </svg>
+                        Contact</a>
+                </ul>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+                <path fill="auto"
+                    d="M21 2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 18H3V6h18zM9 8c-1.1 0-2 .9-2 2s-.9 2-2 2v2c1.1 0 2 .9 2 2s.9 2 2 2h2v-2H9v-1c0-1.1-.9-2-2-2c1.1 0 2-.9 2-2v-1h2V8m4 0c1.1 0 2 .9 2 2s.9 2 2 2v2c-1.1 0-2 .9-2 2s-.9 2-2 2h-2v-2h2v-1c0-1.1.9-2 2-2c-1.1 0-2-.9-2-2v-1h-2V8z" />
+            </svg>
+            <p>2025/7/30</p>
+        </div>
+
+
+
+
+
+
+
+        <!-- Don't get out of this field, OK? -->
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="responsiveMenu">
+        <svg class="resMenuExit" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+            viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+            <path fill="#fff"
+                d="m12 12.708l-5.246 5.246q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 11.292l5.246-5.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354L12.708 12l5.246 5.246q.14.14.15.345q.01.203-.15.363t-.354.16t-.354-.16z" />
+        </svg>
+
+
+
+
+
+        <ul>
+            <a href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                    <path fill="auto"
+                        d="M4.5 21q-.625 0-1.062-.437T3 19.5v-1.9l4-3.55V21zM8 21v-4h8v4zm9 0v-8.2L12.725 9l3.025-2.675l4.75 4.225q.25.225.375.513t.125.612V19.5q0 .625-.437 1.063T19.5 21zM3 16.25v-4.575q0-.325.125-.625t.375-.5L11 3.9q.2-.2.463-.287T12 3.525t.538.088T13 3.9l2 1.775z" />
+                </svg>
+                Home</a>
+
+            <a href="#services">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+                    <path fill="auto"
+                        d="M21 13c.6 0 1.1.2 1.4.6c.4.4.6.9.6 1.4l-8 3l-7-2V7h1.9l7.3 2.7c.5.2.8.6.8 1.1c0 .3-.1.6-.3.8s-.5.4-.9.4H14l-1.7-.7l-.3.9l2 .8zM2 7h4v11H2z" />
+                </svg>
+                Services
+            </a>
+
+            <a href="#project">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 512 512"><!-- Icon from Siemens Industrial Experience Icons by Siemens AG - https://github.com/siemens/ix-icons/blob/main/LICENSE.md -->
+                    <path fill="auto" fill-rule="evenodd"
+                        d="m256 34.347l192 110.851v221.703L256 477.752L64 366.901V145.198zM106.666 192.001v150.266l128 73.9V265.902zm298.667.001l-128 73.9v150.265l128-73.9zM256 83.614l-125.867 72.67L256 228.952l125.867-72.67z" />
+                </svg>
+                My projects</a>
+            <a href="./pages/projects.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 512 512"><!-- Icon from Siemens Industrial Experience Icons by Siemens AG - https://github.com/siemens/ix-icons/blob/main/LICENSE.md -->
+                    <path fill="auto" fill-rule="evenodd"
+                        d="M421.935 90.066c2.286 2.287 5.356 7.973 4.013 21.398c-1.323 13.221-6.731 30.687-16.845 51.505a306 306 0 0 1-3.77 7.492v42.31c39.823-61.993 54.037-115.44 31.687-137.79c-22.529-22.528-76.652-7.907-139.277 32.646l20.879 12.054c10.535-6.46 20.717-12.073 30.411-16.783c20.817-10.114 38.283-15.522 51.504-16.845c13.425-1.343 19.112 1.727 21.398 4.013M405.333 341.54v-42.31c39.823 61.993 54.037 115.44 31.687 137.79c-22.536 22.536-76.689 7.897-139.341-32.687l20.877-12.053c10.559 6.477 20.763 12.104 30.477 16.823c20.817 10.114 38.283 15.522 51.505 16.845c13.424 1.343 19.111-1.727 21.397-4.013c2.287-2.287 5.357-7.973 4.013-21.398c-1.322-13.221-6.73-30.687-16.845-51.505a306 306 0 0 0-3.77-7.492m-211.888 50.74l20.876 12.053c-62.651 40.584-116.804 55.223-139.34 32.687c-22.35-22.35-8.136-75.795 31.686-137.788v42.31a309 309 0 0 0-3.769 7.49c-10.114 20.818-15.522 38.284-16.845 51.505c-1.343 13.425 1.727 19.111 4.013 21.398c2.287 2.286 7.973 5.356 21.398 4.013c13.221-1.323 30.687-6.731 51.505-16.845c9.713-4.719 19.917-10.346 30.476-16.823M74.981 74.981c-22.35 22.35-8.136 75.795 31.686 137.788v-42.311a308 308 0 0 1-3.769-7.489c-10.114-20.818-15.522-38.284-16.845-51.505c-1.343-13.425 1.727-19.111 4.013-21.398c2.287-2.286 7.973-5.356 21.398-4.013c13.221 1.323 30.687 6.73 51.505 16.845c9.693 4.709 19.874 10.322 30.41 16.782l20.878-12.054C151.633 67.074 97.51 52.453 74.981 74.981M256 108.16l128 73.901v147.801l-128 73.901l-128-73.901V182.06zm85.333 123.132v73.937l-64 36.95v-73.937zm-106.666 36.95v73.937l-64-36.95v-73.937zM256 231.291l-63.969-36.933L256 157.426l63.969 36.932z"
+                        clip-rule="evenodd" />
+                </svg>
+                All Projects</a>
+            <a href="#contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                    <path fill="auto"
+                        d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3" />
+                </svg>
+                Contact</a>
+        </ul>
+
+        <p>2025/7/30</p>
+
+    </div>
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+@view-transition {
+    navigation: auto;
+    animation-duration: 5s;
+    easing: var(--easing);
+}
+
+:root {
+    --accent-color: #47a9ff;
+    --accent-color-lt: #6bbaff;
+    --accent-color-lt-xl: #8fdbff;
+    --accent-color-dk: #2c88d8;
+    --accent-color-dk-xl: #134d80;
+
+    --padding: 60px;
+
+
+    --easing-ease: linear(0, 0.002 0.6%, 0.007 1.3%, 0.016 2%, 0.028 2.7%, 0.043 3.4%, 0.063 4.2%, 0.086 5%, 0.115 5.9%, 0.166 7.3%, 0.225 8.8%, 0.484 14.9%, 0.597 17.7%, 0.653 19.2%, 0.703 20.6%, 0.749 22%, 0.791 23.4%, 0.827 24.7%, 0.862 26.1%, 0.894 27.5%, 0.922 28.9%, 0.947 30.3%, 0.97 31.8%, 0.99 33.3%, 1.006 34.8%, 1.028 37.4%, 1.043 40.2%, 1.052 43.2%, 1.054 46.6%, 1.053 49%, 1.049 51.8%, 1.017 66.2%, 1.005 74.9%, 1 79.9%, 0.998 85.3%, 1);
+    --easing-bounce: linear(0, 0.011 0.7%, 0.043 1.4%, 0.176 3%, 0.862 8.3%, 1.096 10.5%, 1.24 12.6%, 1.283 13.7%, 1.305 14.8%, 1.305 16.2%, 1.277 17.7%, 1.225 19.3%, 1.054 23.5%, 0.984 25.5%, 0.93 27.8%, 0.906 30.2%, 0.915 33.2%, 1.004 40.9%, 1.029 45.5%, 1.026 48.6%, 0.999 56.4%, 0.991 60.8%, 1.003 75.9%, 1);
+}
+
+html {
+    accent-color: var(--accent-color);
+    color-scheme: dark;
+    background: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+
+    transition: 0.7s all var(--easing-ease);
+}
+
+*::after,
+*::before {
+    transition: 0.7s all var(--easing-ease);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9rem;
+}
+
+input,
+button {
+    outline: none;
+    border: 1px solid #fff2;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    user-select: none;
+}
+
+canvas {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    filter: brightness(3);
+    /* mask: none; */
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+.canvas-mask {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #000 30%, #0000 60%);
+}
+
+.canvas-mask::after,
+.canvas-mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(15deg, #000 40%, #0000 60%);
+}
+
+.canvas-mask::after {
+    left: auto;
+    right: 0;
+    background: linear-gradient(-15deg, #000 40%, #0000 60%);
+}
+
+
+
+
+button {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    color: #fff;
+    border: 3px solid var(--accent-color-dk);
+    background: var(--accent-color-dk);
+    text-transform: uppercase;
+
+    --shadow-distance: 50px;
+}
+
+button:hover {
+    background: color-mix(in srgb, var(--accent-color-dk) 10%, #0000);
+    box-shadow: 0 10px var(--shadow-distance) var(--accent-color-dk-xl);
+    scale: 1.01;
+}
+
+
+/* /////////// ******* START ******* /////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main>h1 {
+    margin: 10% auto;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 7rem;
+    background: linear-gradient(65deg, var(--accent-color-dk), var(--accent-color-lt-xl), #fff);
+    color: transparent;
+    background-clip: text;
+    position: relative;
+
+    transform: translateY(100px) rotateX(-15deg);
+    animation: fadeIn 1s var(--easing-ease) forwards;
+    transform-origin: bottom;
+    animation-delay: 1s;
+    scale: 0.95;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+
+    95% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0px) rotateX(0deg);
+    }
+}
+
+
+main>h1::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    background: #0001;
+    filter: blur(40px);
+}
+
+
+
+.canvasAnimationGuy {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #0005;
+    width: 100%;
+    height: 100vh;
+
+    animation: graient-altitude 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes graient-altitude {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -150%;
+        opacity: 0.7;
+    }
+}
+
+
+.canvasAnimationGuy::before,
+.canvasAnimationGuy::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 120%;
+    background: linear-gradient(35deg, #0000 10%, #000 40%);
+}
+
+.canvasAnimationGuy::after {
+    left: auto;
+    right: 0;
+    background: linear-gradient(-35deg, #0000 10%, #000 40%);
+}
+
+
+
+
+
+.projectWrapper {
+    width: 100%;
+    padding: 30px var(--padding);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+
+
+    transform: translate(0, 100px);
+    animation: fadeInWrapper 1s var(--easing-ease) forwards;
+    animation-delay: 1.5s;
+    visibility: hidden;
+}
+
+@keyframes fadeInWrapper {
+    to {
+        visibility: visible;
+        transform: translate(0, 0);
+    }
+}
+
+
+.projectBox {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid #fff2;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    place-items: end;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.projectBox::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(to top, #0009 30%, #0000);
+    backdrop-filter: blur(10px);
+    mask-image: linear-gradient(to top, #000 30%, #0000);
+
+    opacity: 0;
+}
+
+
+.responsive::after {
+    content: "Responsive";
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: color-mix(in srgb, var(--accent-color-dk-xl), #0000);
+    color: var(--accent-color-lt-xl);
+    text-shadow: 0 0 10px #0005;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.projectBox:hover {
+    border-color: #fff5;
+    box-shadow: 5px 7px 10px #1e1e1e36,
+        -5px 7px 10px #1e1e1e36;
+}
+
+.projectBox:hover img {
+    scale: 1.01;
+}
+
+
+.projectBox img {
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+
+.projectBoxInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto 0 0;
+    padding-bottom: 5px;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+
+.projectBox:hover::before,
+.projectBox:hover .projectBoxInfo {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.projectBoxInfo h2 {
+    text-transform: capitalize;
+}
+
+.projectBoxInfo p {
+    color: #fff8;
+    font-size: 0.9rem;
+}
+
+.projectBoxInfo a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: var(--accent-color-dk);
+    width: fit-content;
+    border: 3px solid var(--accent-color-dk);
+}
+
+.projectBoxInfo a:hover {
+    background: #0005;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (2300px <=width <=2600px) {
+    :root {
+        --padding: 400px;
+    }
+}
+
+@media (2000px <=width <=2300px) {
+    :root {
+        --padding: 250px;
+    }
+}
+
+@media (1800px <=width <=2000px) {
+    :root {
+        --padding: 150px;
+    }
+}
+
+@media (900px <=width <=1200px) {
+    :root {
+        --padding: 40px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    main>h1 {
+        font-size: 5rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+    :root {
+        --padding: 20px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    main>h1 {
+        font-size: 3rem;
+    }
+
+    .projectBoxInfo h2 {
+        font-size: 1.2rem;
+    }
+
+    .projectBoxInfo p {
+        font-size: 0.8rem;
+    }
+
+    .projectBoxInfo a {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .responsive::after {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .projectWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .projectBox {
+        height: 300px;
+    }
+
+    .projectBoxInfo h2 {
+        font-size: 1rem;
+    }
+
+    .projectBoxInfo p {
+        font-size: 0.7rem;
+    }
+
+    .projectBoxInfo a {
+        width: 100%;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .projectBox {
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    main>h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .projectBox {
+        height: 250px;
+        padding: 5px;
+    }
+}
